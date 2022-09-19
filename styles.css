@@ -20,6 +20,7 @@
 }
 
 
+    
 body {
     background: var(--Lightgrayishblue);
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -41,45 +42,83 @@ p{
     font-size: 25px;
 }
 .verify{
-    color: aliceblue;
+    color: var(--White);
     opacity: 50%;
 }
 .verifyblack{
-    color:black
+    color:var(--Verydarkblackishblue);
+    opacity: 50%;
 }
 img{
     border-radius: 50%;
 }
+main{
+    padding: 50px;
+    margin:30px;
+    
+
+    
+}
 .Clifford{
+    grid-area: a;
     background-color: var(--moderateviolet);
 }
 .Jonathan{
+    grid-area: b;
     background-color: var(--Verydarkgrayishblue);
 }
 .Jeanette{
+    grid-area: d;
     background-color: var(--White);
     color: black;}
 .patrick{
+    grid-area: e;
 background-color: var(--Verydarkblackishblue);
     }
-    .Kira{
+    .kira{
+        grid-area: c;
 background-color: var(--White);
     }
 
-main{
-    padding: 90px;
-    margin:30px;
-   
-    
-}
+
 
 
 .container{
-    margin: 10px;;
+    margin: 30px;;
     padding: 20px;
-    color: aliceblue;
+    color: hsl(0, 0%, 100%);
     border-radius: 10px;
+    
 }
 .blackfont{
     color:var(--Verydarkblackishblue);
 }
+
+@media (min-width:1000px){
+main{
+    /* grid */
+    display: grid;
+    grid-template-areas: 
+    "a a b b"
+    "d d e e"
+    "c c c c";
+}
+}
+@media (min-width:1400px){
+main{
+    /* grid */
+    display: grid;
+    grid-template-areas: 
+    "a a b c"
+    "d e e c";
+}
+}
+@media (max-width:670px){
+main{
+    padding: 0;
+    margin: 10px;
+}
+}
+
+
+
