@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+/* ### Primary */
+
+--moderateviolet: hsl(263, 55%, 52%);
+--Verydarkgrayishblue: hsl(217, 19%, 35%);
+--Verydarkblackishblue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+
+/* ### Neutral */
+
+--Lightgray: hsl(0, 0%, 81%);
+--Lightgrayishblue: hsl(210, 46%, 95%);
+}
+
+
+body {
+    background: var(--Lightgrayishblue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.body-text{
+    opacity: 50%;
+}
+
+.top{
+    display: flex;
+    gap: 10px;
+}
+p{
+    opacity: 70%;
+}
+
+.job{
+    
+    font-size: 25px;
+}
+.verify{
+    color: aliceblue;
+    opacity: 50%;
+}
+.verifyblack{
+    color:black
+}
+img{
+    border-radius: 50%;
+}
+.Clifford{
+    background-color: var(--moderateviolet);
+}
+.Jonathan{
+    background-color: var(--Verydarkgrayishblue);
+}
+.Jeanette{
+    background-color: var(--White);
+    color: black;}
+.patrick{
+background-color: var(--Verydarkblackishblue);
+    }
+    .Kira{
+background-color: var(--White);
+    }
+
+main{
+    padding: 90px;
+    margin:30px;
+   
+    
+}
+
+
+.container{
+    margin: 10px;;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.blackfont{
+    color:var(--Verydarkblackishblue);
+}
